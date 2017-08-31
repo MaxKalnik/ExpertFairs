@@ -1,0 +1,48 @@
+.left-line
+  position relative
+  
+  &:after
+    content ''
+    position absolute
+    top 40px
+    left -31px
+    height calc(100% - 59px)
+    width 1px
+    background-color $theme_red
+
+.left-line__icon
+  position relative
+  
+  &:before    
+    content ''
+    width 13px
+    height 16px
+    position absolute
+    left -37px
+    top 20px
+
+.left-line__icon--top-offers:before    
+  background url('images/pointer.svg') center no-repeat
+
+.left-line__icon--compare:before
+  width 16px
+  height 15px
+  background url('images/pointer-up.svg') center no-repeat
+
+.left-line__icon--stats:before
+  width 16px
+  height 16px
+  background url('images/pie-chart.svg') center no-repeat
+
+.left-line__circle
+  position relative
+  
+  &:before
+    content ''
+    position absolute
+    width 7px
+    height 7px
+    background-color $theme_red
+    border-radius 50%
+    bottom: 8px
+    left -34px
