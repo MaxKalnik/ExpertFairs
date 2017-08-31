@@ -1,0 +1,9 @@
+.container
+  width 100%
+  max-width "calc(80px + %s)" % $container-max-width
+  margin 0 auto
+  padding 0 40px
+  box-sizing border-box
+  
+  +respond-to(550px)
+    padding 0 16px

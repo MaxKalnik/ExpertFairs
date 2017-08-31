@@ -1,0 +1,171 @@
+.team__wrapper
+  display flex
+  align-items center
+
+.team__image
+  img
+    margin auto
+    display block
+    width 100%
+    max-width 1140px
+    max-height 416px
+
+.team__stats
+  background-color #29a5d0
+  padding 64px 0
+
+.team__stats-list
+  display flex
+
+.team__stats-item
+  width 262px
+  box-sizing content-box
+  padding 0 40px
+  height 104px
+  position relative
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+  color: #fff
+  
+  &:not(:last-child):after
+    content ''
+    position absolute
+    width 1px
+    background-color #fff
+    height 100%
+    right 0
+    top 0
+    opacity .2
+
+.team__stats-title
+  font-weight 500
+  font-size 20px
+  color #fff
+  letter-spacing .34px
+  text-transform uppercase
+  position relative
+  
+  &:after
+    content ''
+    position absolute
+    width 1px
+    background-color #fff
+    height 109px
+    left -15px
+    bottom calc(50% + 8px)
+  
+  &:before
+    content ''
+    position absolute
+    background-color #fff
+    height 7px
+    width 7px
+    left -18px
+    top calc(50% - 3.5px)
+    border-radius 50%
+
+.team__stats-value
+  font-size 72px
+  color #fff
+  line-height 1
+  font-weight 900
+  margin-bottom 16px
+
+.team__stats-descr
+  font-weight 500
+  font-size 12px
+  color rgba(255, 255, 255, .7)
+  line-height 1.4
+  text-transform uppercase
+
+.services__list
+  display flex
+  
+  +respond-to(850px)
+    flex-wrap wrap
+
+.services__item
+  width 25%
+  height 384px
+  
+  +respond-to(850px)
+    width 50%
+  
+  +respond-to(550px)
+    height 240px
+    font-size 14px
+
+.service__item-link
+  position relative
+  display block
+  height 100%
+
+.services__item-picture
+  display block
+  width 100%
+  height 100%
+  
+  img
+    width 100%
+    height 100%
+
+.services__item-picture
+  .services__item--booking &
+    background url(images/services/service-booking.jpg) no-repeat center/cover
+    
+    +respond-to(850px)
+      background-position bottom center
+
+  .services__item--tickets &
+    background url(images/services/service-tickets.jpg) no-repeat center/cover
+
+  .services__item--hotels &
+    background url(images/services/service-hotels.jpg) no-repeat center/cover
+
+  .services__item--rentals &
+    background url(images/services/service-rentals.jpg) no-repeat center/cover
+
+.services__item-title
+  position absolute
+  width 100%
+  padding 0 30px
+  left 0
+  top 30px
+  color #fff
+  font-size 16px
+  line-height 24px
+  text-transform uppercase
+  text-align center
+  font-weight 900
+  box-sizing border-box
+  
+  +respond-to(550px)
+    padding: 0 12px
+    top 16px
+    font-size 14px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
