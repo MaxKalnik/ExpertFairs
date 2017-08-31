@@ -115,6 +115,9 @@ body
   color: #e0fcff
   text-align: center
 
+.section
+  position relative
+
 .section--top-offers
   position: relative
   margin-bottom: 96px
@@ -127,9 +130,15 @@ body
   font-weight: 900
   padding-bottom: 24px
   
-  +respond-to(850px)
+  +respond-to(1439px)
+    padding-left: 34px
+  
+  +respond-to(1024px)
     font-size: 24px
     line-height 32px
+  
+  +respond-to(768px)
+    padding-left 0
 
 .wrapper
   padding: 48px 152px 0 112px
@@ -142,8 +151,21 @@ body
   font-weight: 400
   position: relative
   
+  +respond-to(1439px)
+    padding-left: 34px
+  
+  +respond-to(768px)
+    padding-left 0
+    font-size 16px
+  
 .primary-text--limited
-  max-width: 714px
+  padding-right: 420px
+  
+  +respond-to(1024px)
+    padding-right: 304px
+  
+  +respond-to(768px)
+    padding-right: 0
 
 .primary-text--less-limited
     max-width: 1043px
@@ -156,6 +178,17 @@ body
   text-transform: uppercase
   font-weight: 700
   margin-bottom: 48px
+  
+  +respond-to(1439px)
+    padding-left: 34px
+    margin-bottom: 32px
+  
+  +respond-to(1024px)
+    font-size 18px
+  
+  +respond-to(768px)
+    padding-left 0
+    font-size 16px
 
 .section__sub-title--top-offers
   max-height: 24px
@@ -230,14 +263,19 @@ body
 
 .section-top-offers__call
   position: absolute
-  top: -80px
+  top: -0px
   right: 0
   padding: 32px
   background: #ffffff
   box-shadow: 0 10px 24px 0 rgba(15,71,77,0.16)
   border-radius: 6px
   z-index: 5
-
+  
+  +respond-to(768px)
+    position static
+    max-width 290px
+    margin 32px auto 0
+  
   &--home
     top: -100px
 
@@ -286,6 +324,10 @@ body
   font-weight: 700
   margin-top: 30px
   margin-bottom: 16px
+  
+  +respond-to(1024px)
+    font-size 32px
+    margin-top 16px
 
 .section-top-offers__call-button
   display: block
@@ -297,8 +339,9 @@ body
   text-align: center
   border: 2px solid #00a9d0
   border-radius: 30px
-  padding: 16px 44px
+  padding: 16px 0
   margin-top: 16px
+  width 100%
 
 .section__btn-see
   position: relative
@@ -399,6 +442,7 @@ body
 .section__title--clients
   width: 650px
   color: #ffffff
+  
   &:before
     width: 16px
     height: 16px
@@ -637,7 +681,7 @@ body
 .page-footer__text
   font-size: 10px
   line-height: 16px
-  font-weight: 400px
+  font-weight: 400
   color: #9198ad
 
 .page-footer__text--info
